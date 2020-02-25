@@ -1,15 +1,15 @@
-Решение тестового задания 
+### Решение тестового задания 
 
 Библиотека, которая умеет вычислять площадь круга по радиусу и треугольника по трем сторонам.
 
-Фигуры создаются с помощью вызовов методов класса FigureConstructor:
-var constructor = new FigureConstructor();
+Фигуры создаются с помощью вызовов методов класса FigureConstructor:  
+`var constructor = new FigureConstructor();`
 
-Создать треугольник:
-var triangle = constructor.CreateTriangle(2, 3, 4);  
-Создать круг:
-var circle = constructor.CreateCircle(5); 
+Создать треугольник:  
+`var triangle = constructor.CreateTriangle(2, 3, 4);`    
+Создать круг:  
+`var circle = constructor.CreateCircle(5);`   
 
-Узнать площадь можно с помощью вызова метода GetArea() у экземпляра фигуры.
+Узнать площадь можно с помощью вызова метода `GetArea()` у экземпляра фигуры.
 
 FigureConstructor генерирует исключение ArgumentException при получении отрицательных значений сторон либо радиуса, а также в случае, когда три стороны не формируют треугольник (одна сторона больше суммы двух других).
